@@ -1,0 +1,87 @@
+{
+  "name": "iwaauto_new",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "core-js": "^3.8.3",
+    "electron-browser-storage": "^1.0.7",
+    "express": "^4.18.2",
+    "nprogress": "^0.2.0",
+    "path": "^0.12.7",
+    "vue": "^2.6.14",
+    "vue-apexcharts": "^1.6.0",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-feather": "^1.0.1",
+    "vue-form-wizard": "^0.8.4",
+    "vue-fullcalendar": "^1.0.9",
+    "vue-i18n": "^8.21.1",
+    "vue-instantsearch": "^3.4.1",
+    "vue-router": "^3.5.1",
+    "vue-server-renderer": "^2.6.12",
+    "vue-skycons": "^1.0.5",
+    "vue-the-mask": "^0.11.1",
+    "vue-world-map": "^0.1.1",
+    "vuebar": "0.0.20",
+    "vuedraggable": "^2.24.1",
+    "vuelidate": "^0.7.4",
+    "vuetify": "2.3.13",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "^5.0.8",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-eslint": "^10.1.0",
+    "electron": "^13.0.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "vue-template-compiler": "^2.6.14",
+    "vuetify-loader": "^1.7.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "globals": {
+      "__static": "readonly",
+      "angular": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser",
+      "requireConfigFile": false
+    },
+    "rules": {
+      "vue/multi-word-component-names": 0
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
